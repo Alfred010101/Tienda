@@ -29,25 +29,23 @@
 
                 <!-- Nombre y Marca en el mismo renglón -->
                 <div class="row mb-3">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <label for="nombre" class="form-label">Nombre del Producto</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" required>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <label for="marca" class="form-label">Marca</label>
                         <input type="text" class="form-control" id="marca" name="marca" required>
                     </div>
                 </div>
 
-                <!-- Precio -->
-                <div class="mb-3">
-                    <label for="precio" class="form-label">Precio</label>
-                    <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
-                </div>
-
-                <!-- Cantidad y Tipo en el mismo renglón -->
+                <!-- Precio Cantidad y Tipo en el mismo renglón -->
                 <div class="row mb-3">
-                    <div class="col-md-8">
+                    <div class="col-md-4">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
+                    </div>
+                    <div class="col-md-4">
                         <label for="cantidad" class="form-label">Cantidad</label>
                         <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" required>
                     </div>
@@ -66,7 +64,6 @@
                     <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
                 </div>
             </form>
-
         </div>
     </main>
 

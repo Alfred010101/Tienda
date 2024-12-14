@@ -10,13 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Proyecto_Tienda/index.php' ? 'active' : ''); ?>" aria-current="page" href="index.php">Inicio</a>
+          <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Tienda/index.php' ? 'active' : ''); ?>" aria-current="page" href="index.php">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Proyecto_Tienda/registrar.php' ? 'active' : ''); ?>" href="registrar.php">Registrar</a>
+          <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Tienda/registrar.php' ? 'active' : ''); ?>" href="registrar.php">Registrar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Proyecto_Tienda/consultar.php' ? 'active' : ''); ?>" href="consultar.php">Buscar</a>
+          <a class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == '/Tienda/consultar.php' ? 'active' : ''); ?>" href="consultar.php">Buscar</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mostrar todo</a>
