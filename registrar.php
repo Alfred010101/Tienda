@@ -17,7 +17,7 @@
                 <!-- Código de barras -->
                 <div class="mb-3">
                     <label for="codigo_barras" class="form-label">Código de Barras</label>
-                    <input type="text" class="form-control" id="codigo_barras" name="codigo_barras" required>
+                    <input type="text" class="form-control" id="codigo_barras" name="codigo_barras" required autofocus>
                 </div>
 
                 <!-- Nombre y Marca en el mismo renglón -->
