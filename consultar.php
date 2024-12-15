@@ -19,7 +19,7 @@
                 <div class="row mb-3">
                     <div class="col-md-8">
                         <label for="codigo_barras" class="form-label">Código de Barras</label>
-                        <input type="text" class="form-control" id="codigo_barras" name="codigo_barras" required autofocus>
+                        <input type="text" class="form-control" id="codigo_barras" name="codigo_barras" autofocus>
                     </div>
                     <div class="col-md-4">
                     <label class="form-label"></label>
@@ -27,15 +27,19 @@
                     </div>
                 </div>
 
+                <div class="mb-3">
+                    <label class="form-label" id="resultado">Codigo buscado : ############</label>
+                </div>
+
                 <!-- Nombre y Marca en el mismo renglón -->
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="nombre" class="form-label" id="resultado">Nombre del Producto</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <label for="nombre" class="form-label">Nombre del Producto</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" readonly>
                     </div>
                     <div class="col-md-6">
                         <label for="marca" class="form-label">Marca</label>
-                        <input type="text" class="form-control" id="marca" name="marca" required>
+                        <input type="text" class="form-control" id="marca" name="marca" readonly>
                     </div>
                 </div>
 
@@ -43,15 +47,15 @@
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <label for="precio" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
+                        <input type="number" class="form-control" id="precio" name="precio" step="0.01" readonly>
                     </div>
                     <div class="col-md-4">
                         <label for="cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" required>
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" readonly>
                     </div>
                     <div class="col-md-4">
                         <label for="tipo" class="form-label">Tipo</label>
-                        <select class="form-select" id="tipo" name="tipo" required>
+                        <select class="form-select" id="tipo" name="tipo" disabled>
                             <option value="kg">Kilogramos</option>
                             <option value="ml">Mililitros</option>
                         </select>
@@ -61,7 +65,7 @@
                 <!-- Descripción -->
                 <div class="mb-3">
                     <label for="descripcion" class="form-label">Descripción</label>
-                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" readonly></textarea>
                 </div>
             </form>
         </div>
