@@ -5,7 +5,7 @@ const resultado = document.getElementById('resultado');
 inputCodigo.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault();                         
-        resultado.textContent = 'Codigo buscado : ' + inputCodigo.value;
+        resultado.textContent = 'Codigo Consultado : ' + inputCodigo.value;
         inputCodigo.value = '';
     }
 });

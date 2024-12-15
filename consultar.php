@@ -12,62 +12,69 @@
 
     <main>
         <div class="container mt-2 mb-2 form-container">
-            <!-- Título centrado con Bootstrap -->
+
             <h2 class="text-center">Consultar Producto</h2>
-            <form action="#" method="POST">
-                <!-- Código de barras -->
-                <div class="row mb-3">
-                    <div class="col-md-8">
-                        <label for="codigo_barras" class="form-label">Código de Barras</label>
-                        <input type="text" class="form-control" id="codigo_barras" name="codigo_barras" autofocus>
-                    </div>
-                    <div class="col-md-4">
-                    <label class="form-label"></label>
-                        <button type="submit" class="btn btn-primary form-control mt-2">Consultar Producto</button>
-                    </div>
-                </div>
 
-                <div class="mb-3">
-                    <label class="form-label" id="resultado">Codigo buscado : ############</label>
-                </div>
+            <!--Formulario de busqueda-->
+            <div id="cont_form_busqueda" class="pb-5">
+                <form id="formBusqueda" method="POST" action="procesar_qr.php">
+                    <label for="codigo_barras" class="form-label">Código de Barras</label>
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <input type="number" class="form-control" id="codigo_barras" name="codigo_barras" autofocus>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary form-control">Consultar Producto</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!--Formulario de resultado-->
+            <div id="cont_form_resultado">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" id="resultado">Codigo Consultado : ############</label>
+                    </div>
 
-                <!-- Nombre y Marca en el mismo renglón -->
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="nombre" class="form-label">Nombre del Producto</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" readonly>
+                    <!-- Nombre y Marca en el mismo renglón -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre del Producto</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="marca" class="form-label">Marca</label>
+                            <input type="text" class="form-control" id="marca" name="marca" readonly>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="marca" class="form-label">Marca</label>
-                        <input type="text" class="form-control" id="marca" name="marca" readonly>
-                    </div>
-                </div>
 
-                <!-- Precio Cantidad y Tipo en el mismo renglón -->
-                <div class="row mb-3">
-                    <div class="col-md-4">
-                        <label for="precio" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="precio" name="precio" step="0.01" readonly>
+                    <!-- Precio Cantidad y Tipo en el mismo renglón -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="precio" class="form-label">Precio</label>
+                            <input type="number" class="form-control" id="precio" name="precio" step="0.01" readonly>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" readonly>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="tipo" class="form-label">Tipo</label>
+                            <select class="form-select" id="tipo" name="tipo" disabled>
+                                <option value="kg">Kilogramos</option>
+                                <option value="ml">Mililitros</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <label for="cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" readonly>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="tipo" class="form-label">Tipo</label>
-                        <select class="form-select" id="tipo" name="tipo" disabled>
-                            <option value="kg">Kilogramos</option>
-                            <option value="ml">Mililitros</option>
-                        </select>
-                    </div>
-                </div>
 
-                <!-- Descripción -->
-                <div class="mb-3">
-                    <label for="descripcion" class="form-label">Descripción</label>
-                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" readonly></textarea>
-                </div>
-            </form>
+                    <!-- Descripción -->
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="3" readonly></textarea>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
