@@ -1,0 +1,5 @@
+.no-arrows {
+    appearance: none;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
